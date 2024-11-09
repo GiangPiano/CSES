@@ -5,8 +5,8 @@ Start date: 09/11/2024
 
 Finish date: N/A
 ## Introductory Problems
-- [ ] Weird Algorithm
-- [ ] Missing Number
+- [x] Weird Algorithm
+- [x] Missing Number
 - [ ] Repetitions
 - [ ] Increasing Array
 - [ ] Permutations
