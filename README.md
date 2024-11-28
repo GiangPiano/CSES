@@ -21,20 +21,20 @@ Finish date: N/A
 - [x] Tower of Hanoi
 - [x] Creating Strings
 - [x] Apple Division
-- [ ] Chessboard and Queens
-- [ ] Digit Queries
-- [ ] Grid Paths
+- [x] Chessboard and Queens
+- [x] Digit Queries
+- [x] Grid Paths
 
 ## Sorting and Searching
-- [ ] Distinct Numbers
-- [ ] Apartments
-- [ ] Ferris Wheel
-- [ ] Concert Tickets
-- [ ] Restaurant Customers
-- [ ] Movie Festival
-- [ ] Sum of Two Values
-- [ ] Maximum Subarray Sum
-- [ ] Stick Lengths
+- [x] Distinct Numbers
+- [x] Apartments
+- [x] Ferris Wheel
+- [x] Concert Tickets
+- [x] Restaurant Customers
+- [x] Movie Festival
+- [x] Sum of Two Values
+- [x] Maximum Subarray Sum
+- [x] Stick Lengths
 - [ ] Missing Coin Sum
 - [ ] Collecting Numbers
 - [ ] Collecting Numbers II
