@@ -35,10 +35,10 @@ Finish date: N/A
 - [x] Sum of Two Values
 - [x] Maximum Subarray Sum
 - [x] Stick Lengths
-- [ ] Missing Coin Sum
-- [ ] Collecting Numbers
-- [ ] Collecting Numbers II
-- [ ] Playlist
+- [x] Missing Coin Sum
+- [x] Collecting Numbers
+- [x] Collecting Numbers II
+- [x] Playlist
 - [ ] Towers
 - [ ] Traffic Lights
 - [ ] Josephus Problem I
