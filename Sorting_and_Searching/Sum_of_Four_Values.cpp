@@ -4,18 +4,24 @@ using namespace std;
 void solve() {
     int n, x; cin >> n >> x;
     vector<int> a(n);
-    map<int, int> mp;
     for (int i = 0; i < n; i++) {
         cin >> a[i];
-        mp[a[i]] = i;
     }
+    map<int, vector<pair<int, int>>> id_of_sum;
+
     for (int i = 0; i < n; i++) {
-        int target = x - a[i];
         for (int j = i + 1; j < n; j++) {
-            if (mp.contains(target - a[j])) {
-                if (i != j && j != mp[target - a[j]] && i != mp[target - a[j]]) {
-                    cout << i + 1 << ' ' << mp[target - a[j]] + 1 << ' ' << j + 1;
-                    return;
+            id_of_sum[a[i] + a[j]].push_back({i + 1, j + 1});
+        }
+    }
+    for (auto [sum1, v]: id_of_sum) {
+        if (id_of_sum.contains(x - sum1)) {
+            for (auto [i, j]: v) {
+                for (auto [k, l]: id_of_sum[x - sum1]) {
+                    if (i != k && j != l && i != l && j != k) {
+                        cout << i << ' ' << j << ' ' << k << ' ' << l;
+                        return;
+                    }
                 }
             }
         }

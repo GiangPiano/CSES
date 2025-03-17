@@ -3,17 +3,21 @@
 using namespace std;
 
 void solve() {
-    int n; cin >> n;
+    int n, x;
+    cin >> n;
     vector<int> a(n);
-    int sum = 0;
     for (int i = 0; i < n; i++) {
         cin >> a[i];
-        sum += a[i];
     }
-    sort(a.begin(), a.end());
-    if (sum - a[n - 1] < a[n - 1]) 
-        cout << 2 * a[n - 1];
-    else cout << sum;
+    map<int, int> cnt;
+    cnt[0] = 1;
+    int sum = 0, res = 0;
+    for (int i = 0; i < n; i++) {
+        sum = (sum + a[i] + 1000000000 * n) % n;
+        res += cnt[sum];
+        cnt[sum]++;
+    }
+    cout << res;
 }
 
 signed main() {
@@ -26,5 +30,5 @@ signed main() {
         solve();
     }
 
-    return 0; 
+    return 0;
 }
